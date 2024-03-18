@@ -40,6 +40,14 @@ body {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media only screen and (max-width: 375px) {
+        .content {
+            width: 306px;
+            height: 306px;
+        }
+    }
+}
 @media only screen and (max-width: 375px) {
     .content {
         width: 306px;
@@ -61,7 +69,17 @@ body {
     justify-content: center;
     transition: background 100ms ease-in-out;
 }
-
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media only screen and (max-width: 375px) {
+        .item {
+            width: 100px;
+            height: 100px;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 100px;
+        }
+    }
+}
 @media only screen and (max-width: 375px) {
     .item {
         width: 100px;
