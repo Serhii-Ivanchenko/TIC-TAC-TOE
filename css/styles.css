@@ -12,6 +12,13 @@ body {
     margin: 20px 0;
 }
 
+@media only screen and (max-width: 375px) {
+    .game-title {
+        font-size: 35px;
+        margin: 10px 0;
+    }
+}
+
 .container {
     display: flex;
     margin: 0 auto;
@@ -33,6 +40,13 @@ body {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+@media only screen and (max-width: 375px) {
+    .content {
+        width: 366px;
+        height: 366px;
+    }
+}
+
 .item {
     display: inline-block;
     margin: 0;
@@ -46,6 +60,16 @@ body {
     text-align: center;
     justify-content: center;
     transition: background 100ms ease-in-out;
+}
+
+@media only screen and (max-width: 375px) {
+    .item {
+        width: 120px;
+        height: 120px;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 120px;
+    }
 }
 
 .item:hover {
@@ -62,6 +86,15 @@ body {
     user-select: none;
 }
 
+@media only screen and (max-width: 375px) {
+
+    .gamewinner-text,
+    .draw-text {
+        font-size: 50px;
+        font-weight: 400;
+    }
+}
+
 .basicLightbox__placeholder {
     width: 700px;
     background-image: radial-gradient(circle, #051937, #004d7a, #008793, #00bf72, #a8eb12);
@@ -69,7 +102,20 @@ body {
     background-size: cover;
 }
 
+@media only screen and (max-width: 375px) {
+    .basicLightbox__placeholder {
+        width: 375px;
+    }
+}
+
 .accent {
     font-size: 90px;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 375px) {
+    .accent {
+        font-size: 60px;
+        font-weight: 700;
+    }
 }
